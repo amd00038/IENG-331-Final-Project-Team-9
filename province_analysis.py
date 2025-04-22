@@ -11,11 +11,7 @@ def _():
     import marimo as mo
     import polars as pl
     import plotly.express as px
-    return
-
-
-@app.cell
-def _():
+    import re
     return
 
 
