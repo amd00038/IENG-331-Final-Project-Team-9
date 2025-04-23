@@ -30,35 +30,27 @@ def _(pl):
 
 
 @app.cell
-def _(province, taster_name):
+def _(pl, province, taster_name):
+    # reviewers_province = pl.concat(
+    #     [taster_name.select("taster_name"), province.select("province")],
+    #     how="horizontal"
+    # )
     reviewers_province = taster_name.join(
-            province, on="province"
+            province, on="province", how="right")
+    count = (
+            reviewers_province
+            .group_by("province")
+            .agg(
+                reviewer_count = pl.col("taster_name").len(),
+            )
         )
-    reviewers_province
-        # artist_artwork = artist_parquet.join(artworks_Titles, on="ConstituentID").remove(pl.col("Date") == datetime(9999,1,1))
-        # artworks_creation = (
-        #     artist_artwork.select(pl.col("Date"))
-        #     .with_columns(
-        #         pl.col("Date").dt.year().max().alias("latest"),
-        #         pl.col("Date").dt.year().min().alias("earliest"),
-        #         pl.col("Date").dt.year().median().alias("median"),
-        #     )
-    # two_provinces = province.filter(pl.col("province").is_in(["&","and"]))
-    # two_provinces
-    # count = (
-    #         taster_name
-    #         .group_by("spotify_track_uri")
-    #         .agg(
-    #             skip_total = pl.col("skipped").sum(),
-    #             play_count = pl.col("skipped").len(),
-    #             skip_rate = pl.col("skipped").sum() / pl.col("skipped").len(),
-    #         )
-    return
+    count
+    return (count,)
 
 
 @app.cell
-def _(counts, px):
-    px.histogram(counts, x="province", y="len")
+def _(count, px):
+    px.histogram(count, x="province", y="reviewer_count")
     return
 
 
