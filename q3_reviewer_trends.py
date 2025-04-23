@@ -18,19 +18,19 @@ def _():
 @app.cell
 def _(pl):
     taster_name = (pl.read_parquet("pipeline/taster_name.parquet"))
-    taster_name
+    #taster_name
     return (taster_name,)
 
 
 @app.cell
 def _(pl):
     province = (pl.read_parquet("pipeline/province.parquet"))
-    province
+    #province
     return (province,)
 
 
 @app.cell
-def _(pl, province, taster_name):
+def _(province, taster_name):
     reviewers_province = taster_name.join(
             province, on="province"
         )
@@ -43,8 +43,8 @@ def _(pl, province, taster_name):
         #         pl.col("Date").dt.year().min().alias("earliest"),
         #         pl.col("Date").dt.year().median().alias("median"),
         #     )
-    two_provinces = province.filter(pl.col("province").is_in(["&","and"]))
-    two_provinces
+    # two_provinces = province.filter(pl.col("province").is_in(["&","and"]))
+    # two_provinces
     # count = (
     #         taster_name
     #         .group_by("spotify_track_uri")

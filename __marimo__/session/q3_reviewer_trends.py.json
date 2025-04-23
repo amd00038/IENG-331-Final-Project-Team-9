@@ -19,12 +19,12 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "825f80e7013a7b51786c77e382c5c82e",
+      "code_hash": "752d74c88567101d131b53bc37b28eee",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='2c5c4df9-9de5-9254-25f1-669c99e76fcc'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/5379-26528-GqCn6cGC.json&quot;' data-total-rows='129971' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/plain": ""
           }
         }
       ],
@@ -32,12 +32,12 @@
     },
     {
       "id": "vblA",
-      "code_hash": "ccedf03a0ceb764b525ed5117a6dd761",
+      "code_hash": "f2be8de3ffb022de9fdb4e0ae8186002",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='99c2e8ad-0ed7-0f61-1c71-186973eece99'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/5379-26528-Dq5yNKT6.json&quot;' data-total-rows='129908' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/plain": ""
           }
         }
       ],
@@ -45,7 +45,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "5d4a012f640d35255bb2903c5baa23b4",
+      "code_hash": "58e64fd7bb14b68cda0617479a99ecaf",
       "outputs": [],
       "console": []
     },
