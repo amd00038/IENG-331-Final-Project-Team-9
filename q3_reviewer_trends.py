@@ -11,8 +11,7 @@ def _():
     import marimo as mo
     import polars as pl
     import plotly.express as px
-    import re
-    return pl, px
+    return (pl,)
 
 
 @app.cell
@@ -31,10 +30,6 @@ def _(pl):
 
 @app.cell
 def _(pl, province, taster_name):
-    # reviewers_province = pl.concat(
-    #     [taster_name.select("taster_name"), province.select("province")],
-    #     how="horizontal"
-    # )
     reviewers_province = taster_name.join(
             province, on="province", how="right")
     count = (
@@ -45,12 +40,12 @@ def _(pl, province, taster_name):
             )
         )
     count
-    return (count,)
+    return
 
 
 @app.cell
-def _(count, px):
-    px.histogram(count, x="province", y="reviewer_count")
+def _():
+    # px.histogram(count, x="province", y="reviewer_count")
     return
 
 
