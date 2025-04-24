@@ -1,0 +1,71 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.13.0"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "199fb8c118f5ebca2066e2afa668576e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "7a1a47e25bf8463d45f321167921be03",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "14e222d04625dd8aa59cbbccaab416f7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "853a0c404bae2d84f53a64841edea71b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "b4e96624c5dd1da700ec768292682c7e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "6b7384661fcf7934812e738cefb2a29b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "73f572b397f497c182168308f9b7d586",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
