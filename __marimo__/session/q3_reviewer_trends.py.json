@@ -19,12 +19,12 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "752d74c88567101d131b53bc37b28eee",
+      "code_hash": "488836be9d493c08d7a2ca3b8f30e1a5",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='79928f63-5fde-567f-2f3d-29d12102ba18'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/570-13828-ae3xNgt3.json&quot;' data-total-rows='129908' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -45,12 +45,18 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "b6ea7ddf22c5e2d5ef02fbff57943b34",
+      "code_hash": "efbac92d9b5b10b2f29ff900db8e5f5d",
       "outputs": [],
       "console": []
     },
     {
       "id": "lEQa",
+      "code_hash": "fb2e0aa016e210a246bde63515b9b9a9",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
       "code_hash": "472b879eac0695bfab3168dd869cc2dc",
       "outputs": [],
       "console": []

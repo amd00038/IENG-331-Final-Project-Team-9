@@ -16,30 +16,20 @@ def _():
 
 @app.cell
 def _(pl):
-    taster_name = (pl.read_parquet("pipeline/taster_name.parquet"))
-    #taster_name
-    return (taster_name,)
+    taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset=pl.col("province"))
+    taster_name
+    return
 
 
 @app.cell
-def _(pl):
-    province = (pl.read_parquet("pipeline/province.parquet"))
-    #province
-    return (province,)
-
-
-@app.cell
-def _(pl, province, taster_name):
-    reviewers_province = taster_name.join(
-            province, on="province", how="right")
-    count = (
-            reviewers_province
-            .group_by("province")
-            .agg(
-                reviewer_count = pl.col("taster_name").len(),
-            )
-        )
-    count
+def _(reviewers_province):
+    count =reviewers_province
+            #.group_by("province")
+            #.agg(
+                #reviewer_count = pl.col("taster_name").len(),
+            #)
+        #)
+    #count.head()
     return
 
 
