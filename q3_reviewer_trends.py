@@ -11,31 +11,37 @@ def _():
     import marimo as mo
     import polars as pl
     import plotly.express as px
-    return (pl,)
+    return pl, px
 
 
 @app.cell
 def _(pl):
     taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset=pl.col("province"))
     taster_name
-    return
-
-
-@app.cell
-def _(reviewers_province):
-    count =reviewers_province
-            #.group_by("province")
-            #.agg(
-                #reviewer_count = pl.col("taster_name").len(),
-            #)
-        #)
-    #count.head()
-    return
+    return (taster_name,)
 
 
 @app.cell
 def _():
-    # px.histogram(count, x="province", y="reviewer_count")
+    # split_df = taster_name.with_columns(pl.col("province").str.split_exact("&", 1).struct.rename_fields(["first_location", "second_location"]).alias("locations").unnest("locations"))
+    # split_df.head()
+
+    return
+
+
+@app.cell
+def _(taster_name):
+    reviewer_count = (
+            taster_name.group_by('taster_name')
+            .len()
+            .head()
+        )
+    return
+
+
+@app.cell
+def _(px, taster_name):
+    px.histogram(taster_name, x="province", y="")
     return
 
 

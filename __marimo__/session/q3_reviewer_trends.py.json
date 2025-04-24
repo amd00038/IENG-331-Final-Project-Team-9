@@ -24,7 +24,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='79928f63-5fde-567f-2f3d-29d12102ba18'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/570-13828-ae3xNgt3.json&quot;' data-total-rows='129908' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='1750bc5e-0c8a-7a26-4dd8-075d2b6d885e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/570-13828-SmlJ0XqB.json&quot;' data-total-rows='129908' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -51,14 +51,53 @@
     },
     {
       "id": "lEQa",
-      "code_hash": "fb2e0aa016e210a246bde63515b9b9a9",
-      "outputs": [],
-      "console": []
+      "code_hash": "1f44843a2167c4427695827e41e1101c",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "'Expr' object has no attribute 'unnest'",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;C:\\Users\\IENG 331\\python-playground\\IENG-331-Final-Project-Team-9\\.venv\\Lib\\site-packages\\marimo\\_runtime\\executor.py&quot;</span>, line <span class=\"m\">141</span>, in <span class=\"n\">execute_cell</span>\n<span class=\"w\">    </span><span class=\"n\">exec</span><span class=\"p\">(</span><span class=\"n\">cell</span><span class=\"o\">.</span><span class=\"n\">body</span><span class=\"p\">,</span> <span class=\"n\">glbls</span><span class=\"p\">)</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;C:\\Users\\saget\\AppData\\Local\\Temp\\marimo_17840\\__marimo__cell_lEQa_.py&quot;</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">split_df</span> <span class=\"o\">=</span> <span class=\"n\">taster_name</span><span class=\"o\">.</span><span class=\"n\">with_columns</span><span class=\"p\">(</span><span class=\"n\">pl</span><span class=\"o\">.</span><span class=\"n\">col</span><span class=\"p\">(</span><span class=\"s2\">&quot;province&quot;</span><span class=\"p\">)</span><span class=\"o\">.</span><span class=\"n\">str</span><span class=\"o\">.</span><span class=\"n\">split_exact</span><span class=\"p\">(</span><span class=\"s2\">&quot;&amp;&quot;</span><span class=\"p\">,</span> <span class=\"mi\">1</span><span class=\"p\">)</span><span class=\"o\">.</span><span class=\"n\">struct</span><span class=\"o\">.</span><span class=\"n\">rename_fields</span><span class=\"p\">([</span><span class=\"s2\">&quot;first_location&quot;</span><span class=\"p\">,</span> <span class=\"s2\">&quot;second_location&quot;</span><span class=\"p\">])</span><span class=\"o\">.</span><span class=\"n\">alias</span><span class=\"p\">(</span><span class=\"s2\">&quot;locations&quot;</span><span class=\"p\">)</span><span class=\"o\">.</span><span class=\"n\">unnest</span><span class=\"p\">(</span><span class=\"s2\">&quot;locations&quot;</span><span class=\"p\">))</span>\n<span class=\"w\">                                        </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">AttributeError</span>: <span class=\"n\">&#39;Expr&#39; object has no attribute &#39;unnest&#39;</span>\n</pre></div>\n</span>"
+        }
+      ]
     },
     {
       "id": "PKri",
       "code_hash": "472b879eac0695bfab3168dd869cc2dc",
       "outputs": [],
+      "console": []
+    },
+    {
+      "id": "YPGl",
+      "code_hash": "b780f8736c81d72fab7a3846ded24423",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 2\n    .group_by(\"province\"),\n    ^\nSyntaxError: invalid syntax\n",
+          "traceback": []
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xbRK",
+      "code_hash": "6da34af221d9cd531f46e679800a8ba5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     }
   ]
