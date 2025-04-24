@@ -16,7 +16,7 @@ def _():
 
 @app.cell
 def _(pl):
-    data = pl.read_csv("data/winemag-data.csv", schema_overrides={"id" : pl.String, "points" : pl.String})
+    data = pl.read_csv("data/winemag-data.csv", schema_overrides={"id" : pl.String})
     data.write_parquet("pipeline/data.parquet")
     return (data,)
 
