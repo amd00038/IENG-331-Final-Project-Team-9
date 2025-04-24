@@ -25,12 +25,6 @@ def _(mo):
 
 
 @app.cell
-def _(mo):
-    mo.md(r"""## I want this to go with the table""")
-    return
-
-
-@app.cell
 def _(pl):
     countries_parquet = pl.read_parquet("pipeline/country.parquet").drop_nulls(subset= pl.col("price"))
     countries_parquet.head()
@@ -51,14 +45,11 @@ def _(countries_parquet, pl, px):
     return
 
 
-app._unparsable_cell(
-    r"""
-    Country_points = countries_parquet.group_by(pl.col(\"country\")).agg(pl.col(\"points\").mean().alias(\"average points
-    \")).sort(by=pl.col(\"average price\"), descending=True)
-    px.bar(Country_price, x = \"country\", y=\"average points\")
-    """,
-    name="_"
-)
+@app.cell
+def _(countries_parquet, pl, px):
+    Country_points = countries_parquet.group_by(pl.col("country")).agg(pl.col("points").mean().alias("average points")).sort(by=pl.col("average points"), descending=True)
+    px.box(countries_parquet, x = "country", y="points")
+    return
 
 
 if __name__ == "__main__":
