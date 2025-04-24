@@ -48,16 +48,17 @@ def _(px, reviewer_count_two_province):
 
 
 @app.cell
-def _(split_df):
-    reviewer_count_one_province = (
-            split_df.group_by("taster_name")
-            .len("second_province").null_count())
-    return (reviewer_count_one_province,)
+def _():
+    # reviewer_count_one_province = (
+    #         split_df.group_by("taster_name")
+    #         .len("second_province"))
+    # reviewer_count_one_province
+    return
 
 
 @app.cell
-def _(px, reviewer_count_one_province):
-    px.bar(reviewer_count_one_province, x="taster_name", y="second_province")
+def _():
+    # px.bar(reviewer_count_one_province, x="taster_name", y="s")
     return
 
 

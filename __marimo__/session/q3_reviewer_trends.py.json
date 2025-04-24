@@ -103,12 +103,12 @@
     },
     {
       "id": "MBPY",
-      "code_hash": "0962ba878a769b76eb1e9b77a25bab13",
+      "code_hash": "2f3e46b1ca41a1ab892c24b844f6362e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='MBPY-0' random-id='b62c0934-ca14-f751-f133-c9a98a467843'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/39-13828-xdLmJpcc.json&quot;' data-total-rows='1' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;taster_name&quot;, [&quot;integer&quot;, &quot;u32&quot;]], [&quot;second_province&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
