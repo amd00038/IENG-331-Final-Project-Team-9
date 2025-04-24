@@ -51,8 +51,8 @@ def _(data, pl):
 
 @app.cell
 def _(data, pl):
-    designation = data.drop_nulls(pl.col("designation"))
-    designation.write_parquet("pipeline/designation.parquet")
+    designation = data.drop_nulls(pl.col("description"))
+    designation.write_parquet("pipeline/description.parquet")
     return
 
 
