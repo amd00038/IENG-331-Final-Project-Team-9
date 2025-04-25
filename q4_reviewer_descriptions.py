@@ -15,38 +15,126 @@ def _():
     import plotly.graph_objects as go
     import re
     from datetime import datetime
-    return
+    return (pl,)
 
 
-app._unparsable_cell(
-    r"""
-    dictionary=pl.read_parquet(\"pipeline/dictionary.parquet\")
-        dictionary.head()
-    """,
-    name="_"
-)
+@app.cell
+def _(pl):
+    descriptions=pl.read_parquet("pipeline/description.parquet")
+    descriptions
 
-
-app._unparsable_cell(
-    r"""
-     artworks=pl.read_parquet(\"data/artworks.parquet\")
-        artworks
-
-        artworks_normalized=artworks.with_columns([
-            pl.col(\"Medium\")
+    descriptions_normalized=descriptions.with_columns([
+            pl.col("description")
             .str.to_lowercase()
             .str.strip_chars()
-            .alias(\"Medium\")
-        ])
-        artworks_normalized
-    """,
-    name="_"
-)
+            .alias("description")
+    ])
+    descriptions_normalized
+    return (descriptions_normalized,)
 
 
 @app.cell
 def _():
     return
+
+
+@app.cell
+def _(description_separated, descriptions_normalized, pl):
+    with_positive_reviews = descriptions_normalized.with_columns(
+        positive_reviews=pl.when((pl.col("points")>=90))
+        .then(pl.col("points"))
+        .otherwise(None)
+                
+    )
+    with_positive_reviews
+
+
+
+    Top_10_materials=(
+        description_separated
+        #.explode("separated_description") #https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.explode.html#polars.DataFrame.explode
+        .group_by("separated_description", "positive_reviews")
+        .agg(pl.len().alias("count"))
+        .sort("count",descending=True)
+        .group_by("positive_reviews")
+        .head(10)
+    )
+    Top_10_materials
+    # description_separated = description_points.with_columns([
+    #         pl.col("description").str.replace(", and", ", ")
+    #         .str.replace(" and ", ", ")
+    #         .str.replace(",,",", ")
+    #         .str.replace(",",", ")
+    #         .str.replace(" but ",", ")
+    #         .str.replace(" pencil on paper" ,"pencil on paper")
+    #         .str.split(", ")
+    #         .alias("Materials")
+
+
+    return (with_positive_reviews,)
+
+
+@app.cell
+def _(pl, with_positive_reviews):
+    description_separated = with_positive_reviews.with_columns([
+        pl.col("description").str.replace(", and", ", ")
+        .str.replace(" and ", ", ")
+        .str.replace(",,",", ")
+        .str.replace(",",", ")
+        .str.replace(" but ",", ")
+        .str.replace(" this " ,", ")
+        .str.replace(" is ",", ")
+        .str.replace(" a ",", ")
+        .str.replace(" to the ",", ")
+        .str.split(", ")
+        .alias("separated_description")
+    ])
+    description_separated
+    return (description_separated,)
+
+
+@app.cell
+def _(description_separated, pl):
+    Top_10_materials=(
+        description_separated
+        #.explode("separated_description") #https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.explode.html#polars.DataFrame.explode
+        .group_by("separated_description", "positive_reviews")
+        .agg(pl.len().alias("count"))
+        .sort("count",descending=True)
+        .group_by("positive_reviews")
+        .head(10)
+    )
+    return
+
+
+@app.cell
+def _(description_points, pl):
+    description_points.with_columns(
+        negative_reviews=pl.when((pl.col("points")<90))
+        .then(pl.col("points"))
+        .otherwise(None)
+    )
+    return
+
+
+app._unparsable_cell(
+    r"""
+    positive_grouped=(
+        with_positive_reviews.group_by(pl.col(\"positive_reviews\"))
+        .agg(pl.col(\"description\")))
+
+    #stop_words_pattern=r\"\b(the|is|as|a|an|and|or|in|of|to|from|with|on|at|this|that|it|for|by|be|are)\b\"
+
+    positive_grouped = positive_grouped.with_columns(
+        pl.col(\"description\")
+        .str.replace_all(\",\", \"\").str.split(\" \")
+    
+    #)
+    positive_grouped
+    #popular_words = positive_grouped.with_columns(pl.col(\"description\").when(r'\b(this|is|as)\b'))
+    """,
+    name="_"
+)
 
 
 if __name__ == "__main__":
