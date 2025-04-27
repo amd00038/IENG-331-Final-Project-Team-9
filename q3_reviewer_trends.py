@@ -90,23 +90,44 @@ def _(mo):
 
 @app.cell
 def _(pl, varieties):
-    taster_variety_counts = (
+    total_reviews = (
         varieties.group_by(['taster_name'])
           .agg(pl.len().alias('count'))
     )
-    taster_variety_counts
-    return (taster_variety_counts,)
+    total_reviews
+    return
+
+
+@app.cell
+def _(pl, varieties):
+    variety_trends = (
+        varieties.group_by(['taster_name', 'designation'])
+          .agg(pl.len().alias('count'))
+    )
+    variety_trends
+    return (variety_trends,)
+
+
+@app.cell
+def _(px, variety_trends):
+    px.bar(variety_trends, x="taster_name", y = "count")
+    return
 
 
 @app.cell
 def _(mo):
-    mo.md(r"""The bar chart below visualizes the number of unique varieties per reviewer. This shows that majority of tasters reviewed a large variety of wines. They did not stick to specific varieties. The reviewer that had the least variety was Christina Pickard with only 2. The reviewer that had the most variety was Roger Voss with 17963. There are a total of 37,976 unique varieties.""")
+    mo.md(r"""The bar chart below visualizes the number of unique varieties per reviewer. This shows that majority of tasters reviewed a large variety of wines. They did not stick to specific varieties. The reviewer that had the least variety was Christina Pickard with only 2. The reviewer that had the most variety was Roger Voss with 17963. There are a total of 37,976 unique varieties. This chart also shows the reviewers with the most reviews and least. The name "Anonymous" is the fill for the null values in taster_name. Roger Voss has the most reviews at 17.963k reviews.""")
     return
 
 
 @app.cell
 def _(px, taster_variety_counts):
     px.bar(taster_variety_counts, x="taster_name", y="count")
+    return
+
+
+@app.cell
+def _():
     return
 
 
