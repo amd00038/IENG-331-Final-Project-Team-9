@@ -17,7 +17,7 @@ def _():
 @app.cell
 def _(pl):
     taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
-    #taster_name
+    taster_name
     return (taster_name,)
 
 
@@ -48,17 +48,27 @@ def _(px, reviewer_count_two_province):
 
 
 @app.cell
-def _():
-    # reviewer_count_one_province = (
-    #         split_df.group_by("taster_name")
-    #         .len("second_province"))
-    # reviewer_count_one_province
-    return
+def _(pl):
+    varieties = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("designation")).drop_nulls(subset = pl.col("designation"))
+    varieties
+    return (varieties,)
 
 
 @app.cell
-def _():
-    # px.bar(reviewer_count_one_province, x="taster_name", y="s")
+def _(pl, varieties):
+    # varieties_df = varieties["designation"].value_counts(sort=True)
+    # varieties_df
+    taster_variety_counts = (
+        varieties.group_by(['taster_name', 'designation'])
+          .agg(pl.len().alias('count'))
+    )
+    taster_variety_counts
+    return (taster_variety_counts,)
+
+
+@app.cell
+def _(px, taster_variety_counts):
+    px.bar(taster_variety_counts, x="taster_name", y="count")
     return
 
 
