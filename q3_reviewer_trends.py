@@ -21,19 +21,19 @@ def _(mo):
 
 
 @app.cell
-def _():
-    # taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
-    # #taster_name
-    return
+def _(pl):
+    taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
+    taster_name
+    return (taster_name,)
 
 
 @app.cell
-def _():
-    # split_df = taster_name.with_columns(pl.col("province").str.extract(r"^(.*?)(?:\s+(?:&|and)\s+|$)").alias("first_province"), pl.col("province").str.extract(r"(?:^.*?\s+(?:&|and)\s+)(.*)").alias("second_province"),
-    #     )
+def _(pl, taster_name):
+    split_df = taster_name.with_columns(pl.col("province").str.extract(r"^(.*?)(?:\s+(?:&|and)\s+|$)").alias("first_province"), pl.col("province").str.extract(r"(?:^.*?\s+(?:&|and)\s+)(.*)").alias("second_province"),
+        )
 
-    # #split_df
-    return
+    split_df
+    return (split_df,)
 
 
 @app.cell
@@ -43,18 +43,18 @@ def _(mo):
 
 
 @app.cell
-def _():
-    # two_province = split_df.drop_nulls("second_province")
-    # reviewer_count_two_province = (
-    #         two_province.group_by("taster_name")
-    #         .len("second_province"))
-    # two_province
-    return
+def _(split_df):
+    two_province = split_df.drop_nulls("second_province")
+    reviewer_count_two_province = (
+            two_province.group_by("taster_name")
+            .len("second_province"))
+    reviewer_count_two_province
+    return (reviewer_count_two_province,)
 
 
 @app.cell
-def _():
-    #px.bar(reviewer_count_two_province, x="taster_name", y="second_province")
+def _(px, reviewer_count_two_province):
+    px.bar(reviewer_count_two_province, x="taster_name", y="second_province")
     return
 
 
@@ -73,7 +73,7 @@ def _(mo):
 @app.cell
 def _(pl):
     varieties = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("designation")).drop_nulls(subset = pl.col("designation"))
-    #varieties
+    varieties
     return (varieties,)
 
 
@@ -91,16 +91,16 @@ def _(mo):
 @app.cell
 def _(pl, varieties):
     taster_variety_counts = (
-        varieties.group_by(['taster_name', 'designation'])
+        varieties.group_by(['taster_name'])
           .agg(pl.len().alias('count'))
     )
-    #taster_variety_counts
+    taster_variety_counts
     return (taster_variety_counts,)
 
 
 @app.cell
 def _(mo):
-    mo.md(r"""The bar chart below visualizes the number of unique varieties per reviewer. This shows that majority of tasters reviewed a large variety of wines. They did not stick to specific varieties.""")
+    mo.md(r"""The bar chart below visualizes the number of unique varieties per reviewer. This shows that majority of tasters reviewed a large variety of wines. They did not stick to specific varieties. The reviewer that had the least variety was Christina Pickard with only 2. The reviewer that had the most variety was Roger Voss with 17963. There are a total of 37,976 unique varieties.""")
     return
 
 
