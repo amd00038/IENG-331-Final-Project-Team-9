@@ -39,7 +39,7 @@ def _():
 
 
 @app.cell
-def _(description_separated, descriptions_normalized, pl):
+def _(descriptions_normalized, pl):
     with_positive_reviews = descriptions_normalized.with_columns(
         positive_reviews=pl.when((pl.col("points")>=90))
         .then(pl.col("points"))
@@ -50,16 +50,16 @@ def _(description_separated, descriptions_normalized, pl):
 
 
 
-    Top_10_materials=(
-        description_separated
-        #.explode("separated_description") #https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.explode.html#polars.DataFrame.explode
-        .group_by("separated_description", "positive_reviews")
-        .agg(pl.len().alias("count"))
-        .sort("count",descending=True)
-        .group_by("positive_reviews")
-        .head(10)
-    )
-    Top_10_materials
+    # Top_10_materials=(
+    #     description_separated
+    #     #.explode("separated_description") #https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.explode.html#polars.DataFrame.explode
+    #     .group_by("separated_description", "positive_reviews")
+    #     .agg(pl.len().alias("count"))
+    #     .sort("count",descending=True)
+    #     .group_by("positive_reviews")
+    #     .head(10)
+    #)
+    #Top_10_materials
     # description_separated = description_points.with_columns([
     #         pl.col("description").str.replace(", and", ", ")
     #         .str.replace(" and ", ", ")
@@ -76,8 +76,14 @@ def _(description_separated, descriptions_normalized, pl):
 
 @app.cell
 def _(pl, with_positive_reviews):
-    description_separated = with_positive_reviews.with_columns([
-        pl.col("description").str.replace(", and", ", ")
+    positive_grouped=(
+        with_positive_reviews.group_by("positive_reviews")
+        .agg(pl.col("description").arr.join(" "))
+    )
+
+    description_separated = positive_grouped.with_columns([
+        pl.col("description")
+        .str.replace(", and", ", ")
         .str.replace(" and ", ", ")
         .str.replace(",,",", ")
         .str.replace(",",", ")
@@ -90,51 +96,27 @@ def _(pl, with_positive_reviews):
         .alias("separated_description")
     ])
     description_separated
-    return (description_separated,)
+
+    # positive_separated=(
+    #     positive_grouped
+    #     .explode("description")
+    #     .group_by("Description")
+    #     .agg(pl.len().alias("count"))
+    #     .sort("count",descending=True)
+    #     .group_by("positive_reviews")
+    #     .head(10)
 
 
-@app.cell
-def _(description_separated, pl):
-    Top_10_materials=(
-        description_separated
-        #.explode("separated_description") #https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.explode.html#polars.DataFrame.explode
-        .group_by("separated_description", "positive_reviews")
-        .agg(pl.len().alias("count"))
-        .sort("count",descending=True)
-        .group_by("positive_reviews")
-        .head(10)
-    )
-    return
+    #stop_words_pattern=r"\b(the|is|as|a|an|and|or|in|of|to|from|with|on|at|this|that|it|for|by|be|are)\b"
 
-
-@app.cell
-def _(description_points, pl):
-    description_points.with_columns(
-        negative_reviews=pl.when((pl.col("points")<90))
-        .then(pl.col("points"))
-        .otherwise(None)
-    )
-    return
-
-
-app._unparsable_cell(
-    r"""
-    positive_grouped=(
-        with_positive_reviews.group_by(pl.col(\"positive_reviews\"))
-        .agg(pl.col(\"description\")))
-
-    #stop_words_pattern=r\"\b(the|is|as|a|an|and|or|in|of|to|from|with|on|at|this|that|it|for|by|be|are)\b\"
-
-    positive_grouped = positive_grouped.with_columns(
-        pl.col(\"description\")
-        .str.replace_all(\",\", \"\").str.split(\" \")
+    #positive_grouped = positive_grouped.with_columns(
+        #pl.col("description")
+        #.str.replace_all(", ", " ").str.split(" ")
     
     #)
-    positive_grouped
-    #popular_words = positive_grouped.with_columns(pl.col(\"description\").when(r'\b(this|is|as)\b'))
-    """,
-    name="_"
-)
+    #positive_grouped
+    #popular_words = positive_grouped.with_columns(pl.col("description").when(r'\b(this|is|as)\b'))
+    return
 
 
 if __name__ == "__main__":
