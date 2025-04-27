@@ -56,8 +56,6 @@ def _(pl):
 
 @app.cell
 def _(pl, varieties):
-    # varieties_df = varieties["designation"].value_counts(sort=True)
-    # varieties_df
     taster_variety_counts = (
         varieties.group_by(['taster_name', 'designation'])
           .agg(pl.len().alias('count'))
