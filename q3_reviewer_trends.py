@@ -17,7 +17,7 @@ def _():
 @app.cell
 def _(pl):
     taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
-    taster_name
+    #taster_name
     return (taster_name,)
 
 
@@ -50,7 +50,7 @@ def _(px, reviewer_count_two_province):
 @app.cell
 def _(pl):
     varieties = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("designation")).drop_nulls(subset = pl.col("designation"))
-    varieties
+    #varieties
     return (varieties,)
 
 
@@ -62,7 +62,7 @@ def _(pl, varieties):
         varieties.group_by(['taster_name', 'designation'])
           .agg(pl.len().alias('count'))
     )
-    taster_variety_counts
+    #taster_variety_counts
     return (taster_variety_counts,)
 
 
