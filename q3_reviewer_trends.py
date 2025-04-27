@@ -11,13 +11,19 @@ def _():
     import marimo as mo
     import polars as pl
     import plotly.express as px
-    return pl, px
+    return mo, pl, px
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""## Taster Name and Province Data""")
+    return
 
 
 @app.cell
 def _(pl):
     taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
-    #taster_name
+    taster_name
     return (taster_name,)
 
 
@@ -27,8 +33,13 @@ def _(pl, taster_name):
         )
 
     split_df
-    # split_df.null_count()
     return (split_df,)
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""## Reviewer Province Count""")
+    return
 
 
 @app.cell
@@ -37,7 +48,7 @@ def _(split_df):
     reviewer_count_two_province = (
             two_province.group_by("taster_name")
             .len("second_province"))
-
+    reviewer_count_two_province
     return (reviewer_count_two_province,)
 
 
@@ -48,17 +59,75 @@ def _(px, reviewer_count_two_province):
 
 
 @app.cell
-def _():
-    # reviewer_count_one_province = (
-    #         split_df.group_by("taster_name")
-    #         .len("second_province"))
-    # reviewer_count_one_province
+def _(mo):
+    mo.md(r"""There are only 4 reviewers out of 20 that specialize in two provinces. The rest of the reviewers specialize in one province. The above bar chart visualizes this.""")
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""## Reviewer Varieties Data""")
+    return
+
+
+@app.cell
+def _(pl):
+    varieties = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("designation")).drop_nulls(subset = pl.col("designation"))
+    varieties
+    return (varieties,)
+
+
+@app.cell
+def _(mo):
+    mo.md(
+        r"""
+        ## Reviewer Varieties Counts
+        The data frame below counts the number of unique varieties per taster.
+        """
+    )
+    return
+
+
+@app.cell
+def _(pl, varieties):
+    total_reviews = (
+        varieties.group_by(['taster_name'])
+          .agg(pl.len().alias('count'))
+    )
+    total_reviews
+    return
+
+
+@app.cell
+def _(pl, varieties):
+    variety_trends = (
+        varieties.group_by(['taster_name', 'designation'])
+          .agg(pl.len().alias('count'))
+    )
+    variety_trends
+    return (variety_trends,)
+
+
+@app.cell
+def _(px, variety_trends):
+    px.bar(variety_trends, x="taster_name", y = "count")
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""The bar chart below visualizes the number of unique varieties per reviewer. This shows that majority of tasters reviewed a large variety of wines. They did not stick to specific varieties. The reviewer that had the least variety was Christina Pickard with only 2. The reviewer that had the most variety was Roger Voss with 17963. There are a total of 37,976 unique varieties. This chart also shows the reviewers with the most reviews and least. The name "Anonymous" is the fill for the null values in taster_name. Roger Voss has the most reviews at 17.963k reviews.""")
+    return
+
+
+@app.cell
+def _(px, taster_variety_counts):
+    px.bar(taster_variety_counts, x="taster_name", y="count")
     return
 
 
 @app.cell
 def _():
-    # px.bar(reviewer_count_one_province, x="taster_name", y="s")
     return
 
 
