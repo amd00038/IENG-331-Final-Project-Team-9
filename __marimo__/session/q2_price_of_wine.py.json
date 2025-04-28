@@ -20,17 +20,24 @@
     {
       "id": "MJUe",
       "code_hash": "8fe3f568e9d2942aad66d39d088a3169",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "vblA",
-      "code_hash": "e0ed1f58b0ad36d60a9f988713236b4e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='b4e3b5e3-d328-dae7-3150-d57367274af1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2907-8576-rMnm1kcb.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"question-does-the-number-of-points-predict-the-price-of-the-wine-if-so-how-strong-is-the-correlation\">Question: Does the number of points predict the price of the wine? If so, how strong is the correlation?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "bf00b5c241b44793e9d28b645ba496ed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='ed5d439d-dcf2-7f97-db84-314a1c04b10a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2907-37056-lPSNU1VD.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -39,7 +46,14 @@
     {
       "id": "bkHC",
       "code_hash": "63a01e8ae04e886ee9ed089c0fcc9250",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -57,39 +71,28 @@
     },
     {
       "id": "PKri",
-      "code_hash": "4aefb836adaf90ed5afb1bfdf234f0f2",
+      "code_hash": "3664933f762989ef847831123c77e1a8",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"conclusion-the-number-of-points-predicts-the-price-of-the-wine-based-on-the-points-of-the-wine-shown-above-in-the-figure-price-of-wine-vs-points-correlation-the-graph-shows-a-small-expenential-growth-of-the-range-of-prices-for-prices-up-to-800-by-creating-a-range-to-800-the-graph-provides-a-clearer-visual-of-the-relation-for-example-from-points-80-90-there-is-a-small-range-in-prices-the-minimum-price-for-points-80-90-in-from-32-90-dollars-where-as-for-points-90-100-the-minimum-price-ranges-from-80-90-dollars-the-max-price-from-80-90-ranges-from-69-510-dollars-and-from-points-90-100-the-max-range-is-from-510-1500-dollars-the-box-plots-shows-an-ezpential-growth-for-the-medium-values-for-each-point\">Conclusion: The number of points predicts the price of the wine based on the points of the wine shown above in the figure \"Price of Wine vs Points Correlation\". The graph shows a small expenential growth of the range of prices for prices up to 800. By creating a range to 800, the graph provides a clearer visual of the relation. For example, from points 80-90 there is a small range in prices. The minimum price for points 80-90 in from 32-90 dollars where as for points 90-100, the minimum price ranges from 80-90 dollars. The max price from 80-90 ranges from 69-510 dollars and from points 90-100 the max range is from 510-1500 dollars. The box plots shows an ezpential growth for the medium values for each point.</h3></span>"
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"conclusion-the-number-of-points-predicts-the-price-of-wine-based-on-the-points-shown-above-in-the-figure-price-of-wine-vs-points-correlation-the-graph-shows-small-exponential-growth-as-points-increase-up-to-800-by-creating-a-price-range-from-0-800-the-graph-provides-a-clearer-visual-of-the-relationship-for-example-from-points-80-90-there-is-a-small-price-range-the-minimum-price-for-80-90-points-is-32-90-dollars-whereas-for-points-90-100-the-minimum-price-ranges-from-80-90-dollars-the-max-price-from-80-90-ranges-from-69-510-dollars-and-from-points-90-100-the-max-range-is-from-510-1500-dollars-the-box-plots-show-an-exponential-growth-for-the-median-values-for-each-point-and-a-larger-variance-as-the-points-increase\">Conclusion: The number of points predicts the price of wine based on the points shown above in the figure \"Price of Wine vs Points Correlation\". The graph shows small exponential growth as points increase up to 800. By creating a price range from 0-800, the graph provides a clearer visual of the relationship. For example, from points 80-90, there is a small price range. The minimum price for 80-90 points is 32-90 dollars, whereas for points 90-100, the minimum price ranges from 80-90 dollars. The max price from 80-90 ranges from 69-510 dollars, and from points 90-100 the max range is from 510-1500 dollars. The box plots show an exponential growth for the median values for each point and a larger variance as the points increase.</h3></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "Xref",
-      "code_hash": "22d1823c41570536efecdbfac6546f6a",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "SFPL",
-      "code_hash": "b89438db471ea915c8b174714d293d11",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "BYtC",
-      "code_hash": "25ecbaf6abb60c8d2de5d29807175396",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "RGSE",
-      "code_hash": "4f65a974cb73751e2eef0e6a4e88550f",
-      "outputs": [],
+      "id": "tdED",
+      "code_hash": "844e76b20a2e748f55b17acf4f6cda4a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h2 id=\"price-of-wine-vs-points-correlation\">Price of Wine vs Points Correlation</h2></span>"
+          }
+        }
+      ],
       "console": []
     }
   ]
