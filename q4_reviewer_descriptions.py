@@ -44,8 +44,8 @@ def _(descriptions_normalized, pl):
         positive_reviews=pl.when((pl.col("points")>=90))
         .then(pl.col("points"))
         .otherwise(None)
-                
-    )
+
+    ).with_columns(pl.col("description").str.extract_all(r'\b([a-zA-Z]{4,})\b')).drop_nulls(subset="positive_reviews")
     with_positive_reviews
 
 
@@ -58,17 +58,17 @@ def _(descriptions_normalized, pl):
     #     .sort("count",descending=True)
     #     .group_by("positive_reviews")
     #     .head(10)
-    #)
-    #Top_10_materials
-    # description_separated = description_points.with_columns([
-    #         pl.col("description").str.replace(", and", ", ")
-    #         .str.replace(" and ", ", ")
-    #         .str.replace(",,",", ")
-    #         .str.replace(",",", ")
-    #         .str.replace(" but ",", ")
-    #         .str.replace(" pencil on paper" ,"pencil on paper")
-    #         .str.split(", ")
-    #         .alias("Materials")
+    # )
+    # Top_10_materials
+    # # description_separated = description_points.with_columns([
+    # #         pl.col("description").str.replace(", and", ", ")
+    # #         .str.replace(" and ", ", ")
+    # #         .str.replace(",,",", ")
+    # #         .str.replace(",",", ")
+    # #         .str.replace(" but ",", ")
+    # #         .str.replace(" pencil on paper" ,"pencil on paper")
+    # #         .str.split(", ")
+    # #         .alias("Materials")
 
 
     return (with_positive_reviews,)
@@ -109,6 +109,37 @@ def _(pl, with_positive_reviews):
 
     #stop_words_pattern=r"\b(the|is|as|a|an|and|or|in|of|to|from|with|on|at|this|that|it|for|by|be|are)\b"
 
+
+@app.cell
+def _():
+    # description_points.with_columns(
+    #     negative_reviews=pl.when((pl.col("points")<90))
+    #     .then(pl.col("points"))
+    #     .otherwise(None)
+    # )
+    return
+
+
+app._unparsable_cell(
+    r"""
+    Unique_Words = with_positive_reviews.with_columns(
+        pl.col(\"description\").list.unique()
+        .alias(\"unique words\")
+    ).explode(\"unique words\").group_by(\"points\").agg(pl.col(\"unique words\"))
+
+    Common_words = unique_words.with_columns(pl.col(Unique_words).alias(unique words 2), pl.col(\"unique_words\").list.intersection(pl.col(\"unique words\"))
+    # stop_words_pattern=r\"\b(the|is|as|a|an|and|or|in|of|to|from|with|on|at|this|that|it|for|by|be|are)\b\"
+
+    # positive_grouped = positive_grouped.with_columns(
+    #     pl.col(\"description\")
+    #     .str.replace_all(\",\", \"\").str.split(\" \")
+
+    # )
+    testing
+    # popular_words = positive_grouped.with_columns(pl.col(\"description\").when(r'\b(this|is|as)\b'))
+    """,
+    name="_"
+)
     #positive_grouped = positive_grouped.with_columns(
         #pl.col("description")
         #.str.replace_all(", ", " ").str.split(" ")
