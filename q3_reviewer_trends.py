@@ -11,7 +11,7 @@ def _():
     import marimo as mo
     import polars as pl
     import plotly.express as px
-    return mo, pl, px
+    return mo, pl
 
 
 @app.cell
@@ -22,18 +22,27 @@ def _(mo):
 
 @app.cell
 def _(pl):
-    taster_name = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("province")).drop_nulls(subset = pl.col("province"))
+    taster_name = pl.read_parquet("pipeline/taster_name.parquet").drop_nulls(subset = pl.col("province"))
     taster_name
     return (taster_name,)
 
 
 @app.cell
 def _(pl, taster_name):
-    split_df = taster_name.with_columns(pl.col("province").str.extract(r"^(.*?)(?:\s+(?:&|and)\s+|$)").alias("first_province"), pl.col("province").str.extract(r"(?:^.*?\s+(?:&|and)\s+)(.*)").alias("second_province"),
-        )
+    # split_df = taster_name.with_columns(pl.col("province").str.extract(r"^(.*?)(?:\s+(?:&|and)\s+|$)").alias("first_province"), pl.col("province").str.extract(r"(?:^.*?\s+(?:&|and)\s+)(.*)").alias("second_province"),
+    # )
 
-    split_df
-    return (split_df,)
+    # split_df.head()
+    variety = (
+        taster_name.group_by(pl.col("taster_name"))
+        .agg(
+            pl.col("variety").unique().count().alias("Varieties"),
+            pl.col("id").count().alias("Number of Entries"), 
+            pl.col("price").max().alias("Max Price"), pl.col("price").min().alias("Min Price")
+        ).sort(by="Varieties", descending=False)
+    )
+    variety
+    return
 
 
 @app.cell
@@ -48,13 +57,13 @@ def _(split_df):
     reviewer_count_two_province = (
             two_province.group_by("taster_name")
             .len("second_province"))
-    reviewer_count_two_province
-    return (reviewer_count_two_province,)
+    reviewer_count_two_province.head()
+    return
 
 
 @app.cell
-def _(px, reviewer_count_two_province):
-    px.bar(reviewer_count_two_province, x="taster_name", y="second_province")
+def _():
+    #px.bar(reviewer_count_two_province, x="taster_name", y="second_province")
     return
 
 
@@ -73,8 +82,8 @@ def _(mo):
 @app.cell
 def _(pl):
     varieties = pl.read_parquet("pipeline/taster_name.parquet").select(pl.col("taster_name"),pl.col("designation")).drop_nulls(subset = pl.col("designation"))
-    varieties
-    return (varieties,)
+    varieties.head()
+    return
 
 
 @app.cell
@@ -89,28 +98,28 @@ def _(mo):
 
 
 @app.cell
-def _(pl, varieties):
-    total_reviews = (
-        varieties.group_by(['taster_name'])
-          .agg(pl.len().alias('count'))
-    )
-    total_reviews
+def _():
+    #total_reviews = (
+        #varieties.group_by(['taster_name'])
+          #.agg(pl.len().alias('count'))
+    #)
+    #total_reviews
     return
 
 
 @app.cell
-def _(pl, varieties):
-    variety_trends = (
-        varieties.group_by(['taster_name', 'designation'])
-          .agg(pl.len().alias('count'))
-    )
-    variety_trends
-    return (variety_trends,)
+def _():
+    #variety_trends = (
+        #varieties.group_by(['taster_name', 'designation'])
+          #.agg(pl.len().alias('count'))
+    #)
+    #variety_trends
+    return
 
 
 @app.cell
-def _(px, variety_trends):
-    px.bar(variety_trends, x="taster_name", y = "count")
+def _():
+    #px.bar(variety_trends, x="taster_name", y = "count")
     return
 
 
@@ -121,8 +130,8 @@ def _(mo):
 
 
 @app.cell
-def _(px, taster_variety_counts):
-    px.bar(taster_variety_counts, x="taster_name", y="count")
+def _():
+    #px.bar(taster_variety_counts, x="taster_name", y="count")
     return
 
 
