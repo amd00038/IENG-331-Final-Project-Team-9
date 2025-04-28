@@ -45,12 +45,12 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "63a01e8ae04e886ee9ed089c0fcc9250",
+      "code_hash": "ec2fb8ee576520a3a4c018e9bb7bbe36",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='c78db7ed-547f-30c5-cdd1-cb3ff3a800e2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/251-37056-UjKbw27y.json&quot;' data-total-rows='120975' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],

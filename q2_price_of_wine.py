@@ -31,6 +31,7 @@ def _(pl):
 @app.cell
 def _(pl, winedata):
     result = winedata.select(pl.col("price", "points"))
+    result
     return
 
 
