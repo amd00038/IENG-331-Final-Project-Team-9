@@ -15,13 +15,13 @@ def _():
     import plotly.graph_objects as go
     import re
     from datetime import datetime
-    return (pl,)
+    return pl, px
 
 
 @app.cell
 def _(pl):
     descriptions=pl.read_parquet("pipeline/description.parquet")
-    descriptions
+    descriptions.head()
     return (descriptions,)
 
 
@@ -41,8 +41,29 @@ def _(descriptions, pl):
 @app.cell
 def _(descriptions_normalized, pl):
     positive_df=descriptions_normalized.filter(pl.col("points") >= 90)
-    positive_df
+    positive_df.head()
     return (positive_df,)
+
+
+@app.cell
+def _(descriptions_normalized, pl):
+    Bottom_5=descriptions_normalized.group_by(pl.col("points")).agg(pl.col("id").len()).sort(by="points", descending=False)
+    Bottom_5.head(5)
+    return
+
+
+@app.cell
+def _(descriptions_normalized, pl):
+    points_df=descriptions_normalized.group_by(pl.col("points")).agg(pl.col("id").len()).sort(by="points", descending=False)
+    top_5=descriptions_normalized.group_by(pl.col("points")).agg(pl.col("id").len()).sort(by="points", descending=True)
+    top_5.head(5)
+    return (points_df,)
+
+
+@app.cell
+def _(points_df, px):
+    px.pie(points_df, values = "id", names = "points")
+    return
 
 
 @app.cell
@@ -126,18 +147,16 @@ def _(pl, positive_separated):
     return
 
 
-app._unparsable_cell(
-    r"""
-      medium_bar=px.bar(
+@app.cell
+def _(Top_10_materials, px):
+    medium_bar=px.bar(
             Top_10_materials,
-            x=\"Materials\",
-            y=\"count\",
-            title=\"Top 10 Art Mediums\"
+            x="Materials",
+            y="count",
+            title="Top 10 Art Mediums"
         )
-        medium_bar
-    """,
-    name="_"
-)
+    medium_bar
+    return
 
 
 @app.cell
@@ -147,7 +166,7 @@ def _(description_separated, pl):
         positive_reviews=pl.when((pl.col("points")>=90))
         .then(pl.col("points"))
         .otherwise(None)
-                
+
     )
     with_positive_reviews
 
@@ -169,7 +188,7 @@ def _(description_separated, pl):
     #     .head(10)
     # )
     # Top_10_materials
-    
+
     # top_positive = most_common_descriptions.filter(pl.col("points") == True).head(10)
     # top_negative = most_common_descriptions.filter(pl.col("points") == False).head(10)
 
