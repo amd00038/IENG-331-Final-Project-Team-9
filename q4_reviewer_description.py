@@ -135,6 +135,7 @@ def _(Top_10_positive_descriptions, px):
             title="Top 10 Descriptive Words for Positive Reviews"
         )
     positive_bar
+
     return
 
 

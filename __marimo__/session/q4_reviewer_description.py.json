@@ -115,7 +115,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='3ec7a02d-bed8-2762-655f-c80d82d49b92'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/478-46956-7zUub90Z.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='58e4656f-2075-8827-df98-7ea95bcec067'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/478-46956-Mz2XUl4q.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
