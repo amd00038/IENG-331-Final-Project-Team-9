@@ -84,7 +84,7 @@ def _(pl, province_normalized):
         province_normalized
         .group_by("designation","province","price")
         .agg(pl.count().alias("designation_count"))
-        .filter(pl.col("designation_count") > 10)
+        .filter(pl.col("designation_count") >= 10)
     )
 
     provinces_over_10df
@@ -118,7 +118,7 @@ def _(avg_price_per_province_over10, px):
 
 @app.cell
 def _(mo):
-    mo.md("""####California has the highest average price for wine in this scenario. Bar chart still flattens out, again showing not much difference in price for provinces with at least 10 wines.""")
+    mo.md("""####Port has the highest average price for wine in this scenario. Bar chart still flattens out, again showing not much difference in price for provinces with at least 10 wines.""")
     return
 
 
