@@ -35,6 +35,12 @@ def _(province):
 
 
 @app.cell
+def _(mo):
+    mo.md("""#Highest Average Prices by Province""")
+    return
+
+
+@app.cell
 def _(pl, province_normalized):
     avg_price_per_province = (
         province_normalized
@@ -62,12 +68,13 @@ def _(avg_price_per_province, px):
 
 @app.cell
 def _(mo):
-    mo.md("""##### We only included the top 20 provinces with the highest average prices. While the average price is really high in Colares, it does flatten out meaning that the average cost of wine likely does not differ much by province excluding the few outliers. """)
+    mo.md("""##### We only included the top 20 provinces with the highest average prices. While the average price is really high in Colares, it does flatten out meaning that the average cost of wine likely does not differ much by province excluding the few outliers.""")
     return
 
 
 @app.cell
 def _():
+    #Highest Average Prices by Province More than 10
     return
 
 
@@ -111,12 +118,7 @@ def _(avg_price_per_province_over10, px):
 
 @app.cell
 def _(mo):
-    mo.md(
-        """
-        ####California has the highest average price for wine in this scenario. Bar chart still flattens out, again showing not much difference in price for provinces with at least 10 wines.
-
-        """
-    )
+    mo.md("""####California has the highest average price for wine in this scenario. Bar chart still flattens out, again showing not much difference in price for provinces with at least 10 wines.""")
     return
 
 
