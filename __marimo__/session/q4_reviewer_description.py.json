@@ -24,7 +24,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='fff7873e-6d0f-5802-e4e0-3e12dad170be'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2806-46956-fqpJ4qft.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='568fea18-5c0a-7826-2a30-02c247d2bbc8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2806-42464-MA88ZNtT.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -37,7 +37,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='6769e181-15c3-2ae4-361b-670b44434176'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/5359-46956-dMhRmMNW.json&quot;' data-total-rows='129971' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='d0811d5f-079a-7c69-c8bc-2d2599e267f2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/5359-42464-BqYdEGGe.json&quot;' data-total-rows='129971' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -50,7 +50,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='b416f340-1b28-0351-7b95-dec502756931'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/3400-46956-D9D9S6LX.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='3c1b631d-3eef-eeb1-605a-83695faeb9ee'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/3400-42464-bYxc8I45.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -58,12 +58,12 @@
     },
     {
       "id": "lEQa",
-      "code_hash": null,
+      "code_hash": "812b168de9a493297626a8b7de5fd884",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='397a9e26-dc52-3d77-2263-934246e55052'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/9606-42464-SzFo0Q3J.json&quot;' data-total-rows='49045' data-total-columns='15' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;separated_description&quot;, [&quot;unknown&quot;, &quot;list[str]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -71,12 +71,12 @@
     },
     {
       "id": "PKri",
-      "code_hash": "68b329da9893e34099c7d8ad5cb9c940",
+      "code_hash": "2fab7c80fe8f452369d53cba2d752e32",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='5767c66f-b34a-8165-c1be-162281e42d6e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/478-42464-rDdM7nFT.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -84,46 +84,7 @@
     },
     {
       "id": "Xref",
-      "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "SFPL",
-      "code_hash": "812b168de9a493297626a8b7de5fd884",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='6a50dfe8-34b0-7a60-c5a3-6bde5d513cf5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/9606-46956-7rWugzQq.json&quot;' data-total-rows='49045' data-total-columns='15' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;separated_description&quot;, [&quot;unknown&quot;, &quot;list[str]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "BYtC",
-      "code_hash": "2fab7c80fe8f452369d53cba2d752e32",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='58e4656f-2075-8827-df98-7ea95bcec067'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/478-46956-Mz2XUl4q.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "RGSE",
-      "code_hash": "b6cba44bbf48f5b4cfbb81571139550b",
+      "code_hash": "5bfa49cebc738f1f09d6c975c41f247e",
       "outputs": [
         {
           "type": "data",
@@ -135,52 +96,46 @@
       "console": []
     },
     {
-      "id": "Kclp",
-      "code_hash": "4364a86592fafd2b0142927f3858ca1f",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "jOyx",
+      "id": "SFPL",
       "code_hash": "16a8aa939c7f3f0dd1217fdb37609117",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='jOyx-0' random-id='c41a9d9e-1378-06bb-9d4c-bd3ec1e44f4a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2806-46956-yJlhnmIG.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='SFPL-0' random-id='49cea96f-9d75-e1d1-e0b7-e0f051c21e53'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/2806-42464-1EdVLCxs.json&quot;' data-total-rows='5' data-total-columns='14' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "EOFd",
+      "id": "BYtC",
       "code_hash": "69e06e474f81c78d2c913513ffd34b7b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='EOFd-0' random-id='4f5b9747-2b9e-cab4-3fb5-ee87da8ea070'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/7215-46956-biis5FUA.json&quot;' data-total-rows='80926' data-total-columns='15' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;separated_description&quot;, [&quot;unknown&quot;, &quot;list[str]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='f5f772d7-c35e-b290-bad5-e85eab1875a4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/7215-42464-HHccxiUk.json&quot;' data-total-rows='80926' data-total-columns='15' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;country&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;designation&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;price&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;province&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_1&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;region_2&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_name&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;taster_twitter_handle&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;title&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;variety&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;winery&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;separated_description&quot;, [&quot;unknown&quot;, &quot;list[str]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "vjLR",
+      "id": "RGSE",
       "code_hash": "4536f4c3f1d04372f512cb525e99d50f",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vjLR-0' random-id='92356e3c-f85f-d30b-a04b-8cd4e1532a59'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/464-46956-6O6klQ6A.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='RGSE-0' random-id='f518eb72-25e2-627f-3983-b566f4ef879c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/464-42464-68wt2M2a.json&quot;' data-total-rows='10' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;separated_description&quot;, [&quot;string&quot;, &quot;str&quot;]], [&quot;count&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "fPNn",
+      "id": "Kclp",
       "code_hash": "7a24e09782da30c7348cc5ea0536d2e9",
       "outputs": [
         {
@@ -193,33 +148,33 @@
       "console": []
     },
     {
-      "id": "oJKP",
+      "id": "emfo",
       "code_hash": "3889b9b916dd1d631f981bd63ff0fe53",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='oJKP-0' random-id='696d28f6-25d0-bff6-9e10-fcd48e1d69ed'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/119-46956-Km0CNU2h.json&quot;' data-total-rows='5' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;id&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='d0ea166b-78ba-0c7b-92c5-669d6450a4bb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/119-42464-kVpgjOSu.json&quot;' data-total-rows='5' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;id&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "qCSG",
+      "id": "Hstk",
       "code_hash": "a0436ed35ce4e4ee7fe046a5285aa3ce",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='qCSG-0' random-id='48dc416b-8f31-cb3e-3cfc-3d32272fa31e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/114-46956-Eoauo8jo.json&quot;' data-total-rows='5' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;id&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='4110fdda-4135-d9a6-d704-ba185f4caf5e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/114-42464-kQtYhHdZ.json&quot;' data-total-rows='5' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;points&quot;, [&quot;integer&quot;, &quot;i64&quot;]], [&quot;id&quot;, [&quot;integer&quot;, &quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "xXNN",
+      "id": "nWHF",
       "code_hash": "3e50febcdaa5f336bd4dfbc97c8b0e39",
       "outputs": [
         {
@@ -232,13 +187,123 @@
       "console": []
     },
     {
-      "id": "blza",
+      "id": "iLit",
       "code_hash": "12be9a1bcb35c9322115abf18dbad8ee",
       "outputs": [
         {
           "type": "data",
           "data": {
             "text/html": "<marimo-plotly data-figure='{&quot;data&quot;: [{&quot;domain&quot;: {&quot;x&quot;: [0.0, 1.0], &quot;y&quot;: [0.0, 1.0]}, &quot;hovertemplate&quot;: &quot;points=%{label}&lt;br&gt;id=%{value}&lt;extra&gt;&lt;/extra&gt;&quot;, &quot;labels&quot;: {&quot;dtype&quot;: &quot;i1&quot;, &quot;bdata&quot;: &quot;UFFSU1RVVldYWVpbXF1eX2BhYmNk&quot;}, &quot;legendgroup&quot;: &quot;&quot;, &quot;name&quot;: &quot;&quot;, &quot;showlegend&quot;: true, &quot;values&quot;: {&quot;dtype&quot;: &quot;u4&quot;, &quot;bdata&quot;: &quot;jQEAALQCAAAsBwAA0QsAAFAZAAA6JQAAODEAACVCAAA3QwAAwi8AADI8AABfLAAAjSUAAFkZAACuDgAA/wUAAAsCAADlAAAATQAAACEAAAATAAAA&quot;}, &quot;type&quot;: &quot;pie&quot;}], &quot;layout&quot;: {&quot;template&quot;: {&quot;data&quot;: {&quot;histogram2dcontour&quot;: [{&quot;type&quot;: &quot;histogram2dcontour&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}, &quot;colorscale&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]]}], &quot;choropleth&quot;: [{&quot;type&quot;: &quot;choropleth&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}], &quot;histogram2d&quot;: [{&quot;type&quot;: &quot;histogram2d&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}, &quot;colorscale&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]]}], &quot;heatmap&quot;: [{&quot;type&quot;: &quot;heatmap&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}, &quot;colorscale&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]]}], &quot;contourcarpet&quot;: [{&quot;type&quot;: &quot;contourcarpet&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}], &quot;contour&quot;: [{&quot;type&quot;: &quot;contour&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}, &quot;colorscale&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]]}], &quot;surface&quot;: [{&quot;type&quot;: &quot;surface&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}, &quot;colorscale&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]]}], &quot;mesh3d&quot;: [{&quot;type&quot;: &quot;mesh3d&quot;, &quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}], &quot;scatter&quot;: [{&quot;fillpattern&quot;: {&quot;fillmode&quot;: &quot;overlay&quot;, &quot;size&quot;: 10, &quot;solidity&quot;: 0.2}, &quot;type&quot;: &quot;scatter&quot;}], &quot;parcoords&quot;: [{&quot;type&quot;: &quot;parcoords&quot;, &quot;line&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scatterpolargl&quot;: [{&quot;type&quot;: &quot;scatterpolargl&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;bar&quot;: [{&quot;error_x&quot;: {&quot;color&quot;: &quot;#2a3f5f&quot;}, &quot;error_y&quot;: {&quot;color&quot;: &quot;#2a3f5f&quot;}, &quot;marker&quot;: {&quot;line&quot;: {&quot;color&quot;: &quot;#E5ECF6&quot;, &quot;width&quot;: 0.5}, &quot;pattern&quot;: {&quot;fillmode&quot;: &quot;overlay&quot;, &quot;size&quot;: 10, &quot;solidity&quot;: 0.2}}, &quot;type&quot;: &quot;bar&quot;}], &quot;scattergeo&quot;: [{&quot;type&quot;: &quot;scattergeo&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scatterpolar&quot;: [{&quot;type&quot;: &quot;scatterpolar&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;histogram&quot;: [{&quot;marker&quot;: {&quot;pattern&quot;: {&quot;fillmode&quot;: &quot;overlay&quot;, &quot;size&quot;: 10, &quot;solidity&quot;: 0.2}}, &quot;type&quot;: &quot;histogram&quot;}], &quot;scattergl&quot;: [{&quot;type&quot;: &quot;scattergl&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scatter3d&quot;: [{&quot;type&quot;: &quot;scatter3d&quot;, &quot;line&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scattermap&quot;: [{&quot;type&quot;: &quot;scattermap&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scattermapbox&quot;: [{&quot;type&quot;: &quot;scattermapbox&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scatterternary&quot;: [{&quot;type&quot;: &quot;scatterternary&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;scattercarpet&quot;: [{&quot;type&quot;: &quot;scattercarpet&quot;, &quot;marker&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}}], &quot;carpet&quot;: [{&quot;aaxis&quot;: {&quot;endlinecolor&quot;: &quot;#2a3f5f&quot;, &quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;minorgridcolor&quot;: &quot;white&quot;, &quot;startlinecolor&quot;: &quot;#2a3f5f&quot;}, &quot;baxis&quot;: {&quot;endlinecolor&quot;: &quot;#2a3f5f&quot;, &quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;minorgridcolor&quot;: &quot;white&quot;, &quot;startlinecolor&quot;: &quot;#2a3f5f&quot;}, &quot;type&quot;: &quot;carpet&quot;}], &quot;table&quot;: [{&quot;cells&quot;: {&quot;fill&quot;: {&quot;color&quot;: &quot;#EBF0F8&quot;}, &quot;line&quot;: {&quot;color&quot;: &quot;white&quot;}}, &quot;header&quot;: {&quot;fill&quot;: {&quot;color&quot;: &quot;#C8D4E3&quot;}, &quot;line&quot;: {&quot;color&quot;: &quot;white&quot;}}, &quot;type&quot;: &quot;table&quot;}], &quot;barpolar&quot;: [{&quot;marker&quot;: {&quot;line&quot;: {&quot;color&quot;: &quot;#E5ECF6&quot;, &quot;width&quot;: 0.5}, &quot;pattern&quot;: {&quot;fillmode&quot;: &quot;overlay&quot;, &quot;size&quot;: 10, &quot;solidity&quot;: 0.2}}, &quot;type&quot;: &quot;barpolar&quot;}], &quot;pie&quot;: [{&quot;automargin&quot;: true, &quot;type&quot;: &quot;pie&quot;}]}, &quot;layout&quot;: {&quot;autotypenumbers&quot;: &quot;strict&quot;, &quot;colorway&quot;: [&quot;#636efa&quot;, &quot;#EF553B&quot;, &quot;#00cc96&quot;, &quot;#ab63fa&quot;, &quot;#FFA15A&quot;, &quot;#19d3f3&quot;, &quot;#FF6692&quot;, &quot;#B6E880&quot;, &quot;#FF97FF&quot;, &quot;#FECB52&quot;], &quot;font&quot;: {&quot;color&quot;: &quot;#2a3f5f&quot;}, &quot;hovermode&quot;: &quot;closest&quot;, &quot;hoverlabel&quot;: {&quot;align&quot;: &quot;left&quot;}, &quot;paper_bgcolor&quot;: &quot;white&quot;, &quot;plot_bgcolor&quot;: &quot;#E5ECF6&quot;, &quot;polar&quot;: {&quot;bgcolor&quot;: &quot;#E5ECF6&quot;, &quot;angularaxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;}, &quot;radialaxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;}}, &quot;ternary&quot;: {&quot;bgcolor&quot;: &quot;#E5ECF6&quot;, &quot;aaxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;}, &quot;baxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;}, &quot;caxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;}}, &quot;coloraxis&quot;: {&quot;colorbar&quot;: {&quot;outlinewidth&quot;: 0, &quot;ticks&quot;: &quot;&quot;}}, &quot;colorscale&quot;: {&quot;sequential&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]], &quot;sequentialminus&quot;: [[0.0, &quot;#0d0887&quot;], [0.1111111111111111, &quot;#46039f&quot;], [0.2222222222222222, &quot;#7201a8&quot;], [0.3333333333333333, &quot;#9c179e&quot;], [0.4444444444444444, &quot;#bd3786&quot;], [0.5555555555555556, &quot;#d8576b&quot;], [0.6666666666666666, &quot;#ed7953&quot;], [0.7777777777777778, &quot;#fb9f3a&quot;], [0.8888888888888888, &quot;#fdca26&quot;], [1.0, &quot;#f0f921&quot;]], &quot;diverging&quot;: [[0, &quot;#8e0152&quot;], [0.1, &quot;#c51b7d&quot;], [0.2, &quot;#de77ae&quot;], [0.3, &quot;#f1b6da&quot;], [0.4, &quot;#fde0ef&quot;], [0.5, &quot;#f7f7f7&quot;], [0.6, &quot;#e6f5d0&quot;], [0.7, &quot;#b8e186&quot;], [0.8, &quot;#7fbc41&quot;], [0.9, &quot;#4d9221&quot;], [1, &quot;#276419&quot;]]}, &quot;xaxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;, &quot;title&quot;: {&quot;standoff&quot;: 15}, &quot;zerolinecolor&quot;: &quot;white&quot;, &quot;automargin&quot;: true, &quot;zerolinewidth&quot;: 2}, &quot;yaxis&quot;: {&quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;ticks&quot;: &quot;&quot;, &quot;title&quot;: {&quot;standoff&quot;: 15}, &quot;zerolinecolor&quot;: &quot;white&quot;, &quot;automargin&quot;: true, &quot;zerolinewidth&quot;: 2}, &quot;scene&quot;: {&quot;xaxis&quot;: {&quot;backgroundcolor&quot;: &quot;#E5ECF6&quot;, &quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;showbackground&quot;: true, &quot;ticks&quot;: &quot;&quot;, &quot;zerolinecolor&quot;: &quot;white&quot;, &quot;gridwidth&quot;: 2}, &quot;yaxis&quot;: {&quot;backgroundcolor&quot;: &quot;#E5ECF6&quot;, &quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;showbackground&quot;: true, &quot;ticks&quot;: &quot;&quot;, &quot;zerolinecolor&quot;: &quot;white&quot;, &quot;gridwidth&quot;: 2}, &quot;zaxis&quot;: {&quot;backgroundcolor&quot;: &quot;#E5ECF6&quot;, &quot;gridcolor&quot;: &quot;white&quot;, &quot;linecolor&quot;: &quot;white&quot;, &quot;showbackground&quot;: true, &quot;ticks&quot;: &quot;&quot;, &quot;zerolinecolor&quot;: &quot;white&quot;, &quot;gridwidth&quot;: 2}}, &quot;shapedefaults&quot;: {&quot;line&quot;: {&quot;color&quot;: &quot;#2a3f5f&quot;}}, &quot;annotationdefaults&quot;: {&quot;arrowcolor&quot;: &quot;#2a3f5f&quot;, &quot;arrowhead&quot;: 0, &quot;arrowwidth&quot;: 1}, &quot;geo&quot;: {&quot;bgcolor&quot;: &quot;white&quot;, &quot;landcolor&quot;: &quot;#E5ECF6&quot;, &quot;subunitcolor&quot;: &quot;white&quot;, &quot;showland&quot;: true, &quot;showlakes&quot;: true, &quot;lakecolor&quot;: &quot;white&quot;}, &quot;title&quot;: {&quot;x&quot;: 0.05}, &quot;mapbox&quot;: {&quot;style&quot;: &quot;light&quot;}}}, &quot;legend&quot;: {&quot;tracegroupgap&quot;: 0}, &quot;margin&quot;: {&quot;t&quot;: 60}, &quot;dragmode&quot;: &quot;zoom&quot;}}' data-config='{}'></marimo-plotly>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "e859fb281c71d86e8987b2073dc36e1b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h4 id=\"can-see-that-the-point-rating-with-the-highest-percentage-was-point-number-88-over-60-of-wines-were-rated-in-what-we-considered-to-be-negative-this-likely-contributes-to-the-increased-number-of-descriptor-counts-in-the-negative-group-majority-of-wines-rated-in-the-negative-range-were-about-45-of-the-total-ratings-were-from-86-89-contributes-to-why-the-negative-descriptions-are-mostly-not-negative-but-more-neutral-less-than-1-of-wines-were-above-a-point-rating-of-95\">Can see that the point rating with the highest percentage was point number 88. Over 60% of wines were rated in what we considered to be negative. This likely contributes to the increased number of descriptor counts in the negative group. Majority of wines rated in the negative range were (about 45 of the total ratings) were from 86-89. Contributes to why the \u201cnegative\u201d descriptions are mostly not negative, but more neutral. Less than 1% of wines were above a point rating of 95.</h4></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aGiJ",
+      "code_hash": "a54e4fb5f5de3fa5009c7d9574892c90",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h4 id=\"there-is-a-decrease-in-the-count-of-the-most-common-words-licorice-is-used-significantly-more-than-vanilla-although-they-are-both-considered-to-be-in-the-top-10-most-used-words-after-filler-words-are-removed-this-decrease-seems-to-level-out-and-flatten-we-can-see-that-in-this-graph-and-the-leveling-out-continues-as-more-words-are-added\">There is a decrease in the count of the most common words. Licorice is used significantly more than vanilla, although they are both considered to be in the top 10 most used words after filler words are removed. This decrease seems to level out and flatten. We can see that in this graph and the leveling out continues as more words are added.</h4></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wfhb",
+      "code_hash": "32617a5f1b4c42e9b330f6aa50d2642c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h4 id=\"counts-for-negative-descriptive-words-were-much-higher-than-those-for-positive-descriptive-words-most-of-these-words-are-not-negative-despite-being-in-the-lower-points-range-from-this-we-can-assume-that-these-wines-were-not-terriblebad-wines-just-less-desirable-than-their-counterparts-can-also-assume-that-higher-rating-wines-are-more-likely-to-be-rich-rather-than-ripe-and-lower-rating-wines-are-more-likely-to-be-ripe-rather-than-rich-also-shows-flattening-of-the-curve-as-we-travel-further-right-on-the-chart-found-that-there-are-some-words-appearing-in-both-positive-and-negative-comments-ex-ripe-vanilla-cherry-rich-rich-appeared-on-both-lists-but-appeared-significantly-higher-on-the-list-for-positive-reviews-even-though-the-count-was-higher-for-this-descriptor-in-the-negative-reviews-list-although-these-are-descriptions-from-negative-reviews-there-dont-appear-to-be-many-negative-words-more-just-neutral-descriptors-soft-can-be-good-or-bad-depending-on-the-person\">Counts for \u201cnegative\u201d descriptive words were much higher than those for positive descriptive words. Most of these words are not negative despite being in the lower points range. From this we can assume that these wines were not terrible/bad wines, just less desirable than their counterparts. Can also assume that higher rating wines are more likely to be rich rather than ripe, and lower rating wines are more likely to be ripe rather than rich. Also shows flattening of the curve as we travel further right on the chart. Found that there are some words appearing in both positive and negative comments. (Ex. \u201cripe\u201d, \u201cvanilla\u201d, cherry, \u201crich\u201d. Rich appeared on both lists but appeared significantly higher on the list for positive reviews, even though the count was higher for this descriptor in the negative reviews list. Although these are descriptions from \u201cnegative\u201d reviews, there don\u2019t appear to be many negative words, more just neutral descriptors. Soft can be good or bad depending on the person.</h4></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cnzo",
+      "code_hash": "98dd2b0eb2f74645c881eecf492f298e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"read-in-data\">Read in data</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lXPM",
+      "code_hash": "00cdd9c8d6f50eb69c0e3eacfa3f7a7e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"normalize-data\">Normalize data</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Nifg",
+      "code_hash": "592de210f3b606e7cee8c19e84031355",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"positive-reviews\">Positive Reviews</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JQWt",
+      "code_hash": "2fa7c18114f4d0955799257adbf6558b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"negative-reviews\">Negative Reviews</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OJmv",
+      "code_hash": "6e426699dce59d2d1a8f7c0ee26e780f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"percentage-of-total-of-each-point\">Percentage of total of each point</h1></span>"
           }
         }
       ],
